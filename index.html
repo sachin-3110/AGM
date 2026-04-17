@@ -18,7 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600&family=Tiro+Devanagari+Sanskrit&display=swap"
     rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -104,7 +104,8 @@
           <li class="text-muted hover:text-gold transition-all duration-300 cursor-pointer">Free Shipping</li>
         </ul>
         <ul class="flex gap-5">
-          <li class="text-muted"><span class="mr-1">💬</span> WhatsApp: +91 9599 1599 29</li>
+          <li class="text-muted"> WhatsApp: +91 9599 1599 29
+          </li>
           <li class="text-muted cursor-pointer hover:text-gold"><span class="mr-1">|</span> Wishlist (0)</li>
           <li class="text-muted cursor-pointer hover:text-gold border-l border-border pl-5">Login / Register</li>
         </ul>
@@ -113,10 +114,9 @@
   </div>
 
   <!-- NAVBAR -->
-  <header
-    class="bg-[#0e0b07]/95 backdrop-blur-[10px] sticky top-0 z-[1000] border-b border-border py-[15px] transition-all duration-300 navbar"
+  <header class="bg-[#0e0b07]/90 backdrop-blur-[4px] sticky top-0 z-[1000] py-[5px] transition-all duration-300 navbar"
     id="navbar">
-    <div class="w-full max-w-[1280px] mx-auto px-4 flex flex-col gap-[10px]">
+    <div class="w-full max-w-[1280px] mx-auto px-4 flex flex-col">
       <div class="flex justify-between items-center">
 
         <div class="flex justify-center items-center gap-2">
@@ -138,13 +138,13 @@
               class="bg-transparent border-none text-cream p-[5px] outline-none w-[150px]">
           </div>
           <a href="#" class="relative text-[1.2rem]">
-            <span>🛍️</span>
+            <span><i class="ri-shopping-cart-2-line"></i></span>
             <span
-              class="absolute -top-[8px] -right-[10px] bg-gold text-bg text-[0.6rem] font-bold px-[6px] py-[2px] rounded-full uppercase tracking-[0.05em]">2</span>
+              class="absolute text-center -top-[4px] -right-[4px] bg-gold/70 text-white text-[0.7rem] font-bold h-4 w-4   rounded-full uppercase">2</span>
           </a>
         </div>
       </div>
-      <div class="flex justify-between items-center w-full">
+      <div class="flex justify-between items-center w-full ">
         <!-- Mobile Hamburger -->
         <div class="hamburger flex flex-col gap-[5px] cursor-pointer lg:hidden">
           <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
@@ -156,7 +156,7 @@
         <nav class="hidden lg:flex w-full justify-between items-center">
           <div class="group static inline-block">
             <a href="#"
-              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Gemstones
+              class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Gemstones
               ▾</a>
             <div
               class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[40px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
@@ -378,7 +378,7 @@
           </div>
           <div class="group static inline-block">
             <a href="#"
-              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rudraksha
+              class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rudraksha
               ▾</a>
             <div
               class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
@@ -507,7 +507,7 @@
 
           <div class="group static inline-block">
             <a href="#"
-              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Bracelets
+              class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Bracelets
               ▾</a>
             <div
               class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
@@ -627,7 +627,7 @@
 
           <div class="group static inline-block">
             <a href="#"
-              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Mala
+              class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Mala
               ▾</a>
             <div
               class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
@@ -753,7 +753,7 @@
 
           <div class="group static inline-block">
             <a href="#"
-              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rings
+              class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rings
               ▾</a>
             <div
               class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
@@ -827,10 +827,10 @@
             </div>
           </div>
           <a href="#"
-            class="text-[1rem] font-semibold uppercase tracking-[1.5px] text-gold hover:text-gold-light transition-colors">Free
+            class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] text-gold hover:text-gold-light transition-colors">Free
             Gems Recommendation</a>
           <a href="#"
-            class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors">Buying
+            class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors">Buying
             Guide</a>
         </nav>
       </div>
@@ -870,13 +870,13 @@
         class="bg-gradient-to-br from-surface to-[#231b11] border border-border p-[40px] rounded-[20px] shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
         <div class="flex flex-col lg:flex-row items-stretch lg:items-end gap-[20px]">
           <div class="flex-1 flex flex-col gap-[10px]">
-            <label class="text-gold text-[0.9rem] uppercase tracking-[1px]">Select Gemstone</label>
+            <label class="text-gold text-[0.9rem] uppercase tracking-[1px] ">Select Gemstone</label>
             <select
-              class="w-full p-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
-              <option>Yellow Sapphire</option>
-              <option>Blue Sapphire</option>
-              <option>Emerald</option>
-              <option>Ruby</option>
+              class="w-full  py-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
+              <option class="">Yellow Sapphire</option>
+              <option class="">Blue Sapphire</option>
+              <option class="">Emerald</option>
+              <option class="">Ruby</option>
             </select>
           </div>
           <div class="flex-1 flex flex-col gap-[10px]">
@@ -1094,7 +1094,8 @@
             class="bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">Get
             Free Recommendation</a>
           <a href="#"
-            class="bg-transparent text-gold border border-gold px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold hover:text-bg hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">📞
+            class="bg-transparent text-gold border border-gold px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold hover:text-bg hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 flex justify-center items-center gap-2"><i
+              class="text-xl ri-phone-fill"></i>
             +91 9599 1599 29</a>
         </div>
       </div>
@@ -1121,8 +1122,15 @@
       class="w-full max-w-[1280px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[40px] mb-[60px]">
       <!-- Col 1 -->
       <div>
-        <h2 class="font-display font-semibold text-[2rem] tracking-[2px] text-cream m-0 leading-[1.2]">AARTI<span
-            class="text-gold">GEMS MINE</span></h2>
+        <div class="flex justify-start -ml-4 items-center text-left">
+          <div class="h-14 flex justify-center items-center w-14 ">
+            <img src="./Images/logoandfavicon/favicon.png" class=" w-20 h-20 object-cover object-center rounded-full"
+              alt="">
+          </div>
+          <h2 class="font-display font-semibold text-[2rem] tracking-[2px] text-cream m-0 leading-[1.2]">AARTI<span
+              class="text-gold"> GEMS MINE</span></h2>
+
+        </div>
         <p class="text-muted my-[15px]">100% Natural | Lab Certified | Since 2010</p>
         <div class="text-gold leading-[1.8]">
           Google Rating 4.9 ★★★★★<br>
@@ -1196,8 +1204,8 @@
 
   <!-- WhatsApp FAB -->
   <a href="#"
-    class="fixed bottom-[30px] right-[30px] w-[60px] h-[60px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-[2rem] shadow-[0_4px_20px_rgba(37,211,102,0.4)] z-[1000] hover:scale-110 transition-transform duration-300 animate-[bounce_2s_infinite]">
-    💬
+    class="fixed bottom-[30px] right-[30px] w-[60px] h-[60px] bg-gold text-white rounded-full flex items-center justify-center text-[2rem] shadow-[0_4px_20px_rgba(37,211,102,0.4)] z-[1000] hover:scale-110 transition-transform duration-300 animate-[bounce_2s_infinite]">
+    <i class="ri-whatsapp-line"></i>
   </a>
 
   <script src="universalJs/main.js"></script>
