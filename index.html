@@ -72,17 +72,24 @@
 
     /* Reveal Animation for scroll Intersection Observer */
     .reveal {
-      @apply opacity-0 translate-y-[30px] transition-all duration-[800ms] ease-out;
+      opacity: 0;
+      transform: translateY(30px);
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition-duration: 800ms;
     }
     .reveal.active {
-      @apply opacity-100 translate-y-0;
+      opacity: 1;
+      transform: translateY(0);
     }
     
     /* Mega Menu dropdown */
     .group:hover .mega-menu {
-      @apply opacity-100 visible translate-y-0;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
     }
-    
+
     /* Astrology circles animations */
     @keyframes spin-slow { 100% { transform: translate(-50%, -50%) rotate(360deg); } }
     @keyframes spin-reverse { 100% { transform: translate(-50%, -50%) rotate(-360deg); } }
@@ -153,9 +160,10 @@
         <!-- Search Bar -->
         <div
           class="flex flex-1 lg:max-w-[250px] items-center bg-surface border border-border rounded-[100px] px-[12px] py-[6px] transition-all focus-within:border-gold focus-within:shadow-[0_0_10px_rgba(201,168,76,0.1)]">
-          <span class="text-muted text-[1.1rem] flex items-center"><i class="ri-search-line"></i></span>
+          <span class="text-muted text-[1.1rem] flex items-center">
+            <i class="ri-search-line"></i></span>
           <input type="text" placeholder="Search gemstones..."
-            class="bg-transparent border-none text-cream px-[8px] py-[2px] outline-none w-full text-[0.9rem] placeholder:text-muted/70">
+            class="bg-transparent border-none text-cream px-[8px] py-[2px] outline-none w-26 text-[0.9rem] placeholder:text-muted/70">
         </div>
 
         <!-- Nav Links Left -->
