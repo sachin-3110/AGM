@@ -19,6 +19,8 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600&family=Tiro+Devanagari+Sanskrit&display=swap"
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -97,6 +99,26 @@
     .animate-spin-reverse { animation: spin-reverse 15s linear infinite; }
   </style>
 </head>
+<style>
+  /* Customizing Swiper Pagination to match your design */
+  .swiper-pagination-bullet {
+    background: #4b5563 !important;
+    /* gray-600 */
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #1f2937 !important;
+    /* gray-800 */
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  .certification-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 
 <body class="font-body bg-bg text-cream leading-relaxed overflow-x-hidden custom-scrollbar scrollbar-thin">
 
@@ -963,13 +985,101 @@
       </a>
     </div>
   </section>
+  <section class="py-12 px-4 md:px-8 max-w-7xl mx-auto">
 
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+        Every Gemstone comes with Govt. or International Lab Certificate
+      </h2>
+      <p class="text-2xl md:text-3xl text-gray-700">
+        Buy only 100% Natural Gemstones
+      </p>
+    </div>
 
+    <div class="flex flex-col lg:flex-row gap-12 items-center">
+
+      <div class="w-full lg:w-5/12 overflow-hidden">
+        <div class="swiper certification-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-surface rounded-[12px] shadow-md overflow-hidden border border-border">
+                <img src="Images/gemsCompressedImages/yellowsapphire2.07ct.webp"
+                  alt="Certified Gemstone" class="w-full h-auto object-cover">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-surface rounded-[12px] shadow-md overflow-hidden border border-border">
+                <img src="Images/gemsCompressedImages/bluesapphire0.67ct.webp"
+                  alt="Certified Gemstone" class="w-full h-auto object-cover">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-6">
+            <div class="certification-pagination bg-surface border border-border px-4 py-2 rounded-full flex gap-2"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 mt-6 flex-wrap">
+          <div class="px-2 py-1 bg-surface border border-border rounded text-xs font-bold text-cream">IGI</div>
+          <div class="w-10 h-10 bg-surface rounded border border-border flex items-center justify-center">
+            <span class="text-[8px] text-center leading-tight text-cream uppercase font-semibold">GJEPC</span>
+          </div>
+          <div class="w-10 h-10 bg-gold rounded border border-gold flex items-center justify-center">
+            <span class="text-bg text-[10px] font-bold">BIS</span>
+          </div>
+          <div class="w-10 h-10 bg-surface rounded border border-border flex items-center justify-center">
+            <span class="text-[8px] text-center leading-tight text-cream uppercase font-semibold">GIA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-7/12 overflow-hidden">
+        <div class="swiper awards-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-md group">
+                <img src="Images/gemsCompressedImages/emerald1.87ct.webp"
+                  alt="Emerald Collection"
+                  class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-md group">
+                <img src="Images/gemsCompressedImages/ruby2.39ct.webp"
+                  alt="Ruby Collection"
+                  class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-md group">
+                <img src="Images/gemsCompressedImages/catseye5.89ct.webp"
+                  alt="Cats Eye Collection"
+                  class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-md group">
+                <img src="Images/gemsCompressedImages/aquamarine.webp" alt="Aquamarine"
+                  class="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-end mt-8">
+            <div class="awards-pagination bg-gray-100 px-5 py-2.5 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <section>
-    <div class="w-full h-screen pt-14 max-w-[1280px] mx-auto px-4 reveal">
+    <div class="w-full  py-14 max-w-[1280px] mx-auto px-4 reveal">
       <div
         class="flex flex-col md:flex-row justify-between items-start md:items-end mb-[40px] border-b border-border pb-[15px] gap-4">
-        <h2 class="font-display font-semibold text-[2.5rem] leading-[1.2]">Buy Gems Online</h2>
+        <h2 class="font-display font-semibold text-[2.5rem] leading-[1.2]">Buy Gems Online <span>(Products Of Trusted
+            Excellence )</span></h2>
         <a href="#" class="text-gold hover:text-gold-light transition-colors">View All Collection →</a>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[10px]">
@@ -1008,6 +1118,13 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="w-full  h-full  max-w-[1280px] reveal">
+      <img class="w-full h-full object-contain" src="https://gemmines.in/wp-content/uploads/2026/01/Pause-GIF-image.gif"
+        alt="">
     </div>
   </section>
   <!-- FEATURED PRODUCTS -->
@@ -1266,6 +1383,8 @@
     <i class="ri-whatsapp-line"></i>
   </a>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="universalJs/main.js"></script>
 </body>
 

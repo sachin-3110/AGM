@@ -36,4 +36,51 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     alert('Mobile menu drawer would open here.');
   });
+
+  // Initialize Swiper Carousels
+  if (typeof Swiper !== 'undefined') {
+    // Certification Swiper (Left Side)
+    new Swiper('.certification-swiper', {
+      loop: true,
+      effect: 'cards',
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.certification-pagination',
+        clickable: true,
+      },
+    });
+
+    // Awards/Gems Swiper (Right Side)
+    new Swiper('.awards-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.awards-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      }
+    });
+  }
 });
