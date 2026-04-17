@@ -157,15 +157,6 @@
           <span class="w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
         </div>
 
-        <!-- Search Bar -->
-        <div
-          class="flex flex-1 lg:max-w-[250px] items-center bg-surface border border-border rounded-[100px] px-[12px] py-[6px] transition-all focus-within:border-gold focus-within:shadow-[0_0_10px_rgba(201,168,76,0.1)]">
-          <span class="text-muted text-[1.1rem] flex items-center">
-            <i class="ri-search-line"></i></span>
-          <input type="text" placeholder="Search gemstones..."
-            class="bg-transparent border-none text-cream px-[8px] py-[2px] outline-none w-26 text-[0.9rem] placeholder:text-muted/70">
-        </div>
-
         <!-- Nav Links Left -->
         <nav class="hidden lg:flex w-full justify-between items-center ml-[20px]">
           <div class="group static inline-block">
@@ -846,6 +837,13 @@
           <a href="#"
             class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors">Buying
             Guide</a>
+          <div
+            class="flex flex-1 lg:max-w-[250px] items-center bg-surface border border-border rounded-[100px] px-[12px] py-[6px] transition-all focus-within:border-gold focus-within:shadow-[0_0_10px_rgba(201,168,76,0.1)]">
+            <span class="text-muted text-[1.1rem] flex items-center">
+              <i class="ri-search-line"></i></span>
+            <input type="text" placeholder="Search gemstones..."
+              class="bg-transparent border-none text-cream px-[4px] py-[2px] outline-none w-26 text-[0.9rem] placeholder:text-muted/70">
+          </div>
         </nav>
       </div>
     </div>
@@ -966,6 +964,52 @@
     </div>
   </section>
 
+
+  <section>
+    <div class="w-full h-screen pt-14 max-w-[1280px] mx-auto px-4 reveal">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-end mb-[40px] border-b border-border pb-[15px] gap-4">
+        <h2 class="font-display font-semibold text-[2.5rem] leading-[1.2]">Buy Gems Online</h2>
+        <a href="#" class="text-gold hover:text-gold-light transition-colors">View All Collection →</a>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[10px]">
+        <!-- Product 1 -->
+        <div
+          class="bg-surface border border-border rounded-[12px] transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] overflow-hidden group">
+          <div class="relative overflow-hidden flex items-center justify-center ">
+            <span
+              class="absolute top-[15px] left-[15px] z-[2] bg-[#10b981] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">CERTIFIED</span>
+            <img src="Images/gemsCompressedImages/yellowsapphire2.07ct.webp" alt="Yellow Sapphire"
+              class="object-cover w-full h-56 transition-transform duration-300 group-hover:scale-110">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[1]">
+            </div>
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[2]">
+              <button
+                class="bg-gold text-bg px-[24px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="p-[15px] flex flex-col gap-[10px]">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-[1rem] text-cream">Yellow Sapphire</h3>
+              <span class="text-gold font-bold">₹12,000</span>
+            </div>
+            <div class="flex items-center justify-between text-[0.85rem] text-muted">
+              <span>2.07 Carat</span>
+              <span>Natural</span>
+            </div>
+            <div class="flex items-center gap-[5px] text-[0.85rem] text-muted">
+              <span class="flex items-center gap-[2px]"><span class="text-yellow-500">★</span>4.9</span>
+              <span>(120 reviews)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- FEATURED PRODUCTS -->
   <section class="py-[48px] pb-[80px] w-full max-w-[1280px] mx-auto px-4 reveal">
     <div
@@ -977,7 +1021,7 @@
     <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[10px]">
       <!-- Product 1 -->
       <div
-        class=" border border-border rounded-[12px]  transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] overflow-hidden group">
+        class="bg-surface border border-border rounded-[12px] transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] overflow-hidden group">
         <div class="relative overflow-hidden flex items-center justify-center ">
           <span
             class="absolute top-[15px] left-[15px] z-[2] bg-[#10b981] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">CERTIFIED</span>
