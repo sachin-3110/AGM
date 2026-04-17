@@ -1,0 +1,11 @@
+#rashiNavratna {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#rashiNavratna li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

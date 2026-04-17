@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarti Gems Mine | India's Most Trusted Gemstone Store</title>
+
+  <meta name="description"
+    content="100% Natural, lab-certified gemstones. Find your perfect Navratna and rudraksha with India's most trusted astrology and gemstone experts.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="Images/logoandfavicon/favicon.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600&family=Tiro+Devanagari+Sanskrit&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0e0b07',
+            surface: '#1a1510',
+            border: '#2e2618',
+            gold: '#c9a84c',
+            'gold-light': '#e8c97a',
+            cream: '#f5efe0',
+            muted: '#8a7d65',
+            redb: '#8b1a1a',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'serif'],
+            body: ['Nunito Sans', 'sans-serif'],
+            hindi: ['Tiro Devanagari Sanskrit', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+
+    @layer utilities {
+      .text-shadow {
+        text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #0e0b07; 
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #2e2618; 
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #c9a84c; 
+      }
+      .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: #2e2618 #0e0b07;
+      }
+    }
+
+    /* Reveal Animation for scroll Intersection Observer */
+    .reveal {
+      @apply opacity-0 translate-y-[30px] transition-all duration-[800ms] ease-out;
+    }
+    .reveal.active {
+      @apply opacity-100 translate-y-0;
+    }
+    
+    /* Mega Menu dropdown */
+    .group:hover .mega-menu {
+      @apply opacity-100 visible translate-y-0;
+    }
+    
+    /* Astrology circles animations */
+    @keyframes spin-slow { 100% { transform: translate(-50%, -50%) rotate(360deg); } }
+    @keyframes spin-reverse { 100% { transform: translate(-50%, -50%) rotate(-360deg); } }
+    .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+    .animate-spin-reverse { animation: spin-reverse 15s linear infinite; }
+  </style>
+</head>
+
+<body class="font-body bg-bg text-cream leading-relaxed overflow-x-hidden custom-scrollbar scrollbar-thin">
+
+  <!-- UTILITY BAR -->
+  <div class="bg-black text-xs py-1.5 border-b border-border hidden md:block">
+    <div class="w-full max-w-[1280px] mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <ul class="flex gap-5">
+          <li class="text-muted hover:text-gold transition-all duration-300 cursor-pointer">Pay Online</li>
+          <li class="text-muted hover:text-gold transition-all duration-300 cursor-pointer">New Arrival</li>
+          <li class="text-muted hover:text-gold transition-all duration-300 cursor-pointer">Cash on Delivery</li>
+          <li class="text-muted hover:text-gold transition-all duration-300 cursor-pointer">Free Shipping</li>
+        </ul>
+        <ul class="flex gap-5">
+          <li class="text-muted"><span class="mr-1">💬</span> WhatsApp: +91 9599 1599 29</li>
+          <li class="text-muted cursor-pointer hover:text-gold"><span class="mr-1">|</span> Wishlist (0)</li>
+          <li class="text-muted cursor-pointer hover:text-gold border-l border-border pl-5">Login / Register</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header
+    class="bg-[#0e0b07]/95 backdrop-blur-[10px] sticky top-0 z-[1000] border-b border-border py-[15px] transition-all duration-300 navbar"
+    id="navbar">
+    <div class="w-full max-w-[1280px] mx-auto px-4 flex flex-col gap-[10px]">
+      <div class="flex justify-between items-center">
+
+        <div class="flex justify-center items-center gap-2">
+          <div class="h-14 flex justify-center items-center w-14 ">
+            <img src="./Images/logoandfavicon/favicon.png" class=" w-20 h-20 object-cover object-center rounded-full"
+              alt="">
+          </div>
+          <a href="index.html" class="flex flex-col">
+            <h2 class="w-fit font-display font-semibold text-[2rem] tracking-[2px] text-cream m-0 leading-tight">
+              AARTI<span class="text-gold"> GEMS MINE</span></h2>
+            <div class="w-fit text-[0.75rem] text-muted tracking-[1px] uppercase text-center mt-[-2px]">Lab Certified •
+              Since 2010</div>
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <div class="flex items-center bg-surface border border-border rounded-[100px] px-[15px] py-[5px]">
+            <span>🔍</span>
+            <input type="text" placeholder="Search..."
+              class="bg-transparent border-none text-cream p-[5px] outline-none w-[150px]">
+          </div>
+          <a href="#" class="relative text-[1.2rem]">
+            <span>🛍️</span>
+            <span
+              class="absolute -top-[8px] -right-[10px] bg-gold text-bg text-[0.6rem] font-bold px-[6px] py-[2px] rounded-full uppercase tracking-[0.05em]">2</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-between items-center w-full">
+        <!-- Mobile Hamburger -->
+        <div class="hamburger flex flex-col gap-[5px] cursor-pointer lg:hidden">
+          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
+          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
+          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
+        </div>
+
+        <!-- Nav Links Left -->
+        <nav class="hidden lg:flex w-full justify-between items-center">
+          <div class="group static inline-block">
+            <a href="#"
+              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Gemstones
+              ▾</a>
+            <div
+              class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[40px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
+              <div class="w-full max-w-[1280px] mx-auto grid grid-cols-4 gap-[40px]">
+                <!-- Col 1 -->
+                <div>
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[20px]">
+                    Rashi Navratna</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/yellowsapphire2.07ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Yellow Sapphire (Pukhraj)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/bluesapphire0.67ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Blue Sapphire (Neelam)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/emerald1.87ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Emerald (Panna)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/ruby2.39ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Ruby (Manik)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/hessonite(gomed)2.93ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Hessonite (Gomed)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/coral3.49ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Coral (Moonga)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/catseye5.89ct.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Cat Eye (Lehsuniya)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-white rounded-full border border-border">⚪</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Pearl (Moti)</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><img
+                          src="Images/gemsCompressedImages/diamond.webp"
+                          class="w-[28px] h-[28px] object-cover rounded-full bg-cream border border-border p-[2px]">
+                        <span class="group-hover/item:pl-[5px] transition-all">Diamond (Heera)</span></a></li>
+                  </ul>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="border-l border-border pl-[20px]">
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[20px]">
+                    Exclusive Collection</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-emerald-100 rounded-full border border-border">🟢</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Australian Pearl</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-green-200 rounded-full border border-border">🟢</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Zambian Emerald</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-red-800 rounded-full border border-border">🔴</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Burma Ruby</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-white rounded-full border border-border">⚪</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Basra Pearl</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-white rounded-full border border-border">⚪</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Burma Pearl</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-800 rounded-full border border-border">🔵</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Kashmir Blue Sapphire</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-green-100 rounded-full border border-border">🟢</span>
+                        <span class="group-hover/item:pl-[5px] transition-all">Panjshir Emerald</span></a></li>
+                  </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="border-l border-border pl-[20px]">
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[20px]">
+                    Semi Precious Stones</h3>
+                  <div class="grid grid-cols-2 gap-[5px] text-sm">
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-yellow-600 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Amber</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-teal-400 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Aventurine</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-400 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Blue Topaz</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-orange-700 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Jasper</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-900 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Lapis Lazuli</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-gray-500 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Moon Stone</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-emerald-700 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Onyx</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-gray-900 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Obsidian</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-red-600 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Star Ruby</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-pink-600 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Spinel</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-teal-500 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Turquoise</span></a>
+                    <a href="#"
+                      class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                        class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-yellow-400 rounded-full border border-border"></span>
+                      <span class="group-hover/item:pl-[5px] transition-all">Topaz</span></a>
+                  </div>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="border-l border-border pl-[20px]">
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[20px]">
+                    Birthstones</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-red-800 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">January Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-purple-700 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">February Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-300 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">March Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-white rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">April Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-emerald-600 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">May Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-purple-300 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">June Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-red-600 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">July Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-green-500 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">August Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-800 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">September Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-teal-200 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">October Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-yellow-600 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">November Birthstone</span></a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors group/item"><span
+                          class="w-[28px] h-[28px] flex items-center justify-center text-[12px] bg-blue-500 rounded-full border border-border"></span>
+                        <span class="group-hover/item:pl-[5px] transition-all">December Birthstone</span></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- Button Container -->
+              <div
+                class="mt-[40px] pt-[20px] pb-[10px] w-full max-w-[1280px] mx-auto flex justify-center border-t border-border mt-[30px]">
+                <a href="#"
+                  class="bg-surface border border-gold text-gold hover:bg-gold hover:text-bg hover:-translate-y-[2px] transition-all font-semibold rounded-[6px] px-[40px] py-[12px] tracking-[1px] uppercase text-[0.9rem] shadow-[0_4px_15px_rgba(201,168,76,0.1)]">View
+                  All Gemstones</a>
+              </div>
+            </div>
+          </div>
+          <div class="group static inline-block">
+            <a href="#"
+              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rudraksha
+              ▾</a>
+            <div
+              class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
+              <div class="w-full max-w-[1280px] mx-auto grid grid-cols-4 gap-[20px]">
+                <!-- Col 1 -->
+                <div>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 1 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 2 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 3 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 4 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 5 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 6 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 7 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 8 MUKHI Rudraksha</a></li>
+                  </ul>
+                </div>
+                <!-- Col 2 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 9 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 10 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 11 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 12 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 13 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 14 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 15 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 16 MUKHI Rudraksha</a></li>
+                  </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 17 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 18 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 19 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 20 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 21 MUKHI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> GARBH GAURI Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> GAURI SHANKAR Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> NAG Rudraksha</a></li>
+                  </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> GANESH Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> SAWAR (1 Mukhi) Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sidh Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> KAMAL Rudraksha</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rudraksha (Nepal) Mala 18.5 MM</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 7 Mukhi Rudraksha (Nepal) Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 5 Mukhi Rudraksha (Nepal) Mala</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-[20px] pt-[15px] border-t border-border flex justify-center w-full max-w-[1280px] mx-auto">
+                <a href="#"
+                  class="bg-surface border border-gold text-gold hover:bg-gold hover:text-bg hover:-translate-y-[2px] transition-all font-semibold rounded-[6px] px-[30px] py-[8px] text-[0.85rem] uppercase">View
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group static inline-block">
+            <a href="#"
+              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Bracelets
+              ▾</a>
+            <div
+              class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
+              <div class="w-full max-w-[1280px] mx-auto grid grid-cols-4 gap-[20px]">
+                <!-- Col 1 -->
+                <div>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Amethyst Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Black Tourmaline Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Blood stone bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Coral Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Citrine Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Carnelian Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Cat's eye Bracelet</a></li>
+                  </ul>
+                </div>
+                <!-- Col 2 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Fluorite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Firoza Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Green aventurine Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Green Jade Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Howlite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rose quartz Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Lapis Lazuli Bracelet</a></li>
+                  </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Labradorite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Moonstone Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Opalite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Pyrite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Tiger's eye bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sphatik Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rudraksha Bracelet</a></li>
+                  </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Red Jasper Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sunstone Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Selenite Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sulemani hakik Bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sodalite bracelet</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Zibu Bracelets</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 7 Chakra Bracelet</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-[20px] pt-[15px] border-t border-border flex justify-center w-full max-w-[1280px] mx-auto">
+                <a href="#"
+                  class="bg-surface border border-gold text-gold hover:bg-gold hover:text-bg hover:-translate-y-[2px] transition-all font-semibold rounded-[6px] px-[30px] py-[8px] text-[0.85rem] uppercase">View
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group static inline-block">
+            <a href="#"
+              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Mala
+              ▾</a>
+            <div
+              class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
+              <div class="w-full max-w-[1280px] mx-auto grid grid-cols-4 gap-[20px]">
+                <!-- Col 1 -->
+                <div>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Amber Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Aquamarine Jaap Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Coral mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Emerald mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Garnet mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Gunja Ratti mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Green Jade Mala</a></li>
+                  </ul>
+                </div>
+                <!-- Col 2 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Hematite Jaap Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Kamal Gatta mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Lapis lazuli mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Multi mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Navratan Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Opal mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Pyrite Jaap Mala</a></li>
+                  </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Pearl Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rudraksha mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Red jade mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rose Quartz mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Rhyolite Jaap mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Ruby mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sodalite Jaap Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sphatik Mala</a></li>
+                  </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="border-l border-border pl-[20px]">
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Smoky Quartz Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sandalwood Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sulemani mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Sunstone Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Tiger's eye Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Tulsi Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Vaijanti Mala</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> 7 Chakra Mala</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-[20px] pt-[15px] border-t border-border flex justify-center w-full max-w-[1280px] mx-auto">
+                <a href="#"
+                  class="bg-surface border border-gold text-gold hover:bg-gold hover:text-bg hover:-translate-y-[2px] transition-all font-semibold rounded-[6px] px-[30px] py-[8px] text-[0.85rem] uppercase">View
+                  More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group static inline-block">
+            <a href="#"
+              class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Rings
+              ▾</a>
+            <div
+              class="mega-menu absolute top-full left-0 right-0 bg-surface border-y border-border border-t-[3px] border-t-gold p-[30px] opacity-0 invisible transition-all duration-300 z-[1000] shadow-[0_10px_30px_rgba(0,0,0,0.8)] cursor-auto flex flex-col">
+              <div class="w-full max-w-[900px] mx-auto grid grid-cols-3 gap-[20px]">
+                <!-- Col 1 -->
+                <div>
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[15px]">
+                    Material</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Gold Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Silver Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Platinum Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Panchdhatu Rings</a></li>
+                  </ul>
+                </div>
+                <!-- Col 2 -->
+                <div class="border-l border-border pl-[20px]">
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[15px]">
+                    Category</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Engagement Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Wedding Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Men's Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Women's Rings</a></li>
+                  </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="border-l border-border pl-[20px]">
+                  <h3
+                    class="font-display font-semibold text-[1.4rem] text-gold border-b border-border pb-[10px] mb-[15px]">
+                    Styles</h3>
+                  <ul class="flex flex-col gap-[5px] text-sm">
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Navratna Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Solitaire Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Birthstone Rings</a></li>
+                    <li><a href="#"
+                        class="flex items-center gap-[10px] text-[0.85rem] text-cream hover:text-gold transition-colors"><span
+                          class="text-[0.6rem] text-muted">▶</span> Custom Rings</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-[20px] pt-[15px] border-t border-border flex justify-center w-full max-w-[1280px] mx-auto">
+                <a href="#"
+                  class="bg-surface border border-gold text-gold hover:bg-gold hover:text-bg hover:-translate-y-[2px] transition-all font-semibold rounded-[6px] px-[30px] py-[8px] text-[0.85rem] uppercase">View
+                  More</a>
+              </div>
+            </div>
+          </div>
+          <a href="#"
+            class="text-[1rem] font-semibold uppercase tracking-[1.5px] text-gold hover:text-gold-light transition-colors">Free
+            Gems Recommendation</a>
+          <a href="#"
+            class="text-[1rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors">Buying
+            Guide</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[80vh] flex items-center justify-center text-center overflow-hidden w-full">
+    <img src="Images/banner/heroSectionBanner.webp" alt="Stunning Gemstones Collection"
+      class="absolute top-0 left-0 w-full h-full object-cover -z-[4]">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-bg/40 to-bg/90 z-[0]"></div>
+    <div class="relative z-[3] max-w-[800px] px-[20px] reveal">
+      <div
+        class="inline-block border border-gold text-gold px-[15px] py-[3px] rounded-[100px] text-[0.65rem] tracking-[2px] uppercase mb-[10px] bg-gold/10 backdrop-blur-[4px]">
+        100% Natural & Energised</div>
+      <h1 class="font-display font-semibold text-[2.5rem] md:text-[4rem] mb-[15px] text-shadow leading-[1.2]">India's
+        Most Trusted Gemstone Store</h1>
+      <p class="font-hindi text-[1.5rem] text-gold-light mb-[40px]">पूर्ण रूप से शुद्ध और प्रमाणित रत्न</p>
+      <div class="flex gap-[20px] justify-center flex-wrap">
+        <a href="#"
+          class="bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">Shop
+          Gemstones</a>
+        <a href="#"
+          class="bg-transparent text-gold border border-gold px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold hover:text-bg hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">Free
+          Recommendation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+
+
+  <!-- GEM FINDER WIDGET -->
+  <section class=" pb-[80px] -mt-[70px] reveal">
+    <div class="w-full max-w-[1280px] mx-auto px-4">
+      <div
+        class="bg-gradient-to-br from-surface to-[#231b11] border border-border p-[40px] rounded-[20px] shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-end gap-[20px]">
+          <div class="flex-1 flex flex-col gap-[10px]">
+            <label class="text-gold text-[0.9rem] uppercase tracking-[1px]">Select Gemstone</label>
+            <select
+              class="w-full p-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
+              <option>Yellow Sapphire</option>
+              <option>Blue Sapphire</option>
+              <option>Emerald</option>
+              <option>Ruby</option>
+            </select>
+          </div>
+          <div class="flex-1 flex flex-col gap-[10px]">
+            <label class="text-gold text-[0.9rem] uppercase tracking-[1px]">Select Carat</label>
+            <select
+              class="w-full p-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
+              <option>2 - 4 Carat</option>
+              <option>4 - 6 Carat</option>
+              <option>6 - 8 Carat</option>
+              <option>8+ Carat</option>
+            </select>
+          </div>
+          <div class="flex-1 flex flex-col gap-[10px]">
+            <label class="text-gold text-[0.9rem] uppercase tracking-[1px]">Select Price</label>
+            <select
+              class="w-full p-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
+              <option>Under ₹10,000</option>
+              <option>₹10,000 - ₹50,000</option>
+              <option>Above ₹50,000</option>
+            </select>
+          </div>
+          <button
+            class="bg-gold text-bg px-[28px] py-[15px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">Search
+            Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative z-[10] w-full max-w-[1280px] mx-auto px-4 reveal">
+    <div
+      class="flex justify-between bg-surface border border-border rounded-[12px] p-[30px] shadow-[0_10px_30px_rgba(0,0,0,0.5)] overflow-x-auto gap-5">
+      <a href="#" class="flex flex-col items-center gap-[15px] min-w-[120px] group">
+        <div
+          class="w-[80px] h-[80px] rounded-full bg-bg border-[2px] border-border flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
+          <img src="Images/gemsCompressedImages/bluesapphire0.67ct.webp" alt="Gemstones"
+            class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <span class="font-semibold uppercase text-[0.85rem] tracking-[1px]">Gemstone</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-[15px] min-w-[120px] group">
+        <div
+          class="w-[80px] h-[80px] rounded-full bg-bg border-[2px] border-border flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
+          <img src="Images/gemsCompressedImages/aquamarine.webp" alt="Rudraksha"
+            class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <span class="font-semibold uppercase text-[0.85rem] tracking-[1px]">Rudraksha</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-[15px] min-w-[120px] group">
+        <div
+          class="w-[80px] h-[80px] rounded-full bg-bg border-[2px] border-border flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
+          <img src="Images/gemsCompressedImages/catseye5.89ct.webp" alt="Bracelets"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <span class="font-semibold uppercase text-[0.85rem] tracking-[1px]">Bracelets</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-[15px] min-w-[120px] group">
+        <div
+          class="w-[80px] h-[80px] rounded-full bg-bg border-[2px] border-border flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
+          <img src="Images/gemsCompressedImages/emerald3.31ct.webp" alt="Rings"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <span class="font-semibold uppercase text-[0.85rem] tracking-[1px]">Rings</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-[15px] min-w-[120px] group">
+        <div
+          class="w-[80px] h-[80px] rounded-full bg-bg border-[2px] border-border flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
+          <img src="Images/gemsCompressedImages/ruby2.39ct.webp" alt="Free Gems"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <span class="font-semibold uppercase text-[0.85rem] tracking-[1px] text-gold">Free Astrology</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="py-[48px] pb-[80px] w-full max-w-[1280px] mx-auto px-4 reveal">
+    <div
+      class="flex flex-col md:flex-row justify-between items-start md:items-end mb-[40px] border-b border-border pb-[15px] gap-4">
+      <h2 class="font-display font-semibold text-[2.5rem] leading-[1.2]">Products Of Trusted Excellence</h2>
+      <a href="#" class="text-gold hover:text-gold-light transition-colors">View All Collection →</a>
+    </div>
+
+    <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px]">
+      <!-- Product 1 -->
+      <div
+        class=" border border-border rounded-[12px]  transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] overflow-hidden group">
+        <div class="relative overflow-hidden flex items-center justify-center ">
+          <span
+            class="absolute top-[15px] left-[15px] z-[2] bg-[#10b981] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">CERTIFIED</span>
+          <img src="Images/gemsCompressedImages/yellowsapphire2.07ct.webp" alt="Yellow Sapphire"
+            class="object-cover w-full h-56 transition-transform duration-300 group-hover:scale-110">
+        </div>
+        <div class="p-[20px]">
+          <h3 class="font-display font-semibold text-[1.2rem] text-nowrap mb-[5px]">Yellow Sapphire (Pukhraj)</h3>
+          <p class="font-hindi text-muted mb-[15px]">पुखराज</p>
+          <div class="flex flex-wrap gap-[10px] mb-[15px]">
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🪐 Brihaspati</span>
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">💍 Marriage</span>
+          </div>
+          <div class="text-[1.2rem] font-semibold mb-[15px]">₹12,500 <span
+              class="text-muted text-[0.9rem] line-through ml-[10px]">₹15,000</span></div>
+          <button
+            class="w-full bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 text-center">Shop
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div
+        class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
+        <div class="relative aspect-square bg-bg flex items-center justify-center">
+          <span
+            class="absolute top-[15px] left-[15px] z-[2] bg-gold text-bg text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">BESTSELLER</span>
+          <img src="Images/gemsCompressedImages/bluesapphire0.77ct.webp" alt="Blue Sapphire"
+            class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-[20px]">
+          <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Blue Sapphire (Neelam)</h3>
+          <p class="font-hindi text-muted mb-[15px]">नीलम</p>
+          <div class="flex flex-wrap gap-[10px] mb-[15px]">
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🪐 Shani</span>
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">💼 Career</span>
+          </div>
+          <div class="text-[1.2rem] font-semibold mb-[15px]">₹18,200</div>
+          <button
+            class="w-full bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 text-center">Shop
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div
+        class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
+        <div class="relative aspect-square bg-bg flex items-center justify-center">
+          <span
+            class="absolute top-[15px] left-[15px] z-[2] bg-[#3b82f6] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">NEW</span>
+          <img src="Images/gemsCompressedImages/emerald1.87ct.webp" alt="Emerald"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-[20px]">
+          <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Emerald (Panna)</h3>
+          <p class="font-hindi text-muted mb-[15px]">पन्ना</p>
+          <div class="flex flex-wrap gap-[10px] mb-[15px]">
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🪐 Budh</span>
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🧠 Focus</span>
+          </div>
+          <div class="text-[1.2rem] font-semibold mb-[15px]">₹21,000</div>
+          <button
+            class="w-full bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 text-center">Shop
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div
+        class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
+        <div class="relative bg-bg flex items-center justify-center">
+          <span
+            class="absolute top-[15px] left-[15px] z-[2] bg-[#8b1a1a] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">SALE</span>
+          <img src="Images/gemsCompressedImages/ruby2.39ct.webp" alt="Ruby"
+            class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-[20px]">
+          <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Ruby (Manik)</h3>
+          <p class="font-hindi text-muted mb-[15px]">माणिक</p>
+          <div class="flex flex-wrap gap-[10px] mb-[15px]">
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🪐 Surya</span>
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">☀️ Success</span>
+          </div>
+          <div class="text-[1.2rem] font-semibold mb-[15px]">₹15,900 <span
+              class="text-muted text-[0.9rem] line-through ml-[10px]">₹20,000</span></div>
+          <button
+            class="w-full bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 text-center">Shop
+            Now</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div
+        class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
+        <div class="relative aspect-square bg-bg flex items-center justify-center">
+          <span
+            class="absolute top-[15px] left-[15px] z-[2] bg-[#10b981] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">CERTIFIED</span>
+          <img src="Images/gemsCompressedImages/coral3.49ct.webp" alt="Red Coral"
+            class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-[20px]">
+          <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Red Coral (Moonga)</h3>
+          <p class="font-hindi text-muted mb-[15px]">मूंगा</p>
+          <div class="flex flex-wrap gap-[10px] mb-[15px]">
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🪐 Mangal</span>
+            <span class="bg-gold/10 text-gold-light text-[0.75rem] px-[8px] py-[4px] rounded-[4px]">🛡️ Courage</span>
+          </div>
+          <div class="text-[1.2rem] font-semibold mb-[15px]">₹5,400</div>
+          <button
+            class="w-full bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300 text-center">Shop
+            Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA HOROSCOPE -->
+  <section class="bg-gradient-to-r from-[#110e0a] to-[#1f1810] py-[80px] border-y border-border reveal">
+    <div
+      class="w-full max-w-[1280px] mx-auto px-4 flex flex-col items-center md:flex-row gap-[60px] text-center md:text-left">
+      <div class="flex-1">
+        <h2 class="font-display font-semibold text-[3rem] mb-[20px] text-gold leading-[1.2]">Which Birthstone Will Solve
+          Your Problem?</h2>
+        <p class="text-[1.2rem] text-cream mb-[30px]">Get a completely free expert astrological recommendation based on
+          your birth chart.</p>
+        <div class="flex gap-[20px] justify-center md:justify-start flex-wrap">
+          <a href="#"
+            class="bg-gold text-bg px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold-light hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">Get
+            Free Recommendation</a>
+          <a href="#"
+            class="bg-transparent text-gold border border-gold px-[28px] py-[12px] font-semibold rounded-[6px] hover:bg-gold hover:text-bg hover:shadow-[0_4px_15px_rgba(201,168,76,0.3)] transition-all duration-300">📞
+            +91 9599 1599 29</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <div class="relative w-[300px] h-[300px]">
+          <!-- CSS Based Mandala / Astrology art -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border border-gold/30 rounded-full border-dashed animate-spin-slow">
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] border-2 border-gold rounded-full animate-spin-reverse">
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[3rem] flex items-center justify-center">
+            ✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#000] pt-[80px]">
+    <div
+      class="w-full max-w-[1280px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[40px] mb-[60px]">
+      <!-- Col 1 -->
+      <div>
+        <h2 class="font-display font-semibold text-[2rem] tracking-[2px] text-cream m-0 leading-[1.2]">AARTI<span
+            class="text-gold">GEMS MINE</span></h2>
+        <p class="text-muted my-[15px]">100% Natural | Lab Certified | Since 2010</p>
+        <div class="text-gold leading-[1.8]">
+          Google Rating 4.9 ★★★★★<br>
+          <span class="text-muted">1 Lakh+ Satisfied Customers</span>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h4 class="font-body text-[1.2rem] uppercase tracking-[1px] mb-[25px] text-gold font-semibold leading-[1.2]">Our
+          Advantage</h4>
+        <ul class="flex flex-col gap-[12px]">
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Free Gems
+              Recommendation</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Buying
+              Guide</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Customer
+              Reviews</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Education
+              Center</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">FAQs</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h4 class="font-body text-[1.2rem] uppercase tracking-[1px] mb-[25px] text-gold font-semibold leading-[1.2]">
+          Quick Links</h4>
+        <ul class="flex flex-col gap-[12px]">
+          <li><a href="about.html"
+              class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">About Us</a></li>
+          <li><a href="contact.html"
+              class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Contact Us</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Shop</a>
+          </li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Privacy
+              Policy</a></li>
+          <li><a href="#" class="text-muted hover:text-gold-light hover:pl-[5px] transition-all duration-300">Terms of
+              Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div>
+        <h4 class="font-body text-[1.2rem] uppercase tracking-[1px] mb-[25px] text-gold font-semibold leading-[1.2]">Our
+          Locations</h4>
+        <div class="bg-surface p-[15px] rounded-[6px] border border-border">
+          <strong class="text-cream">Karol Bagh Head Office</strong>
+          <p class="text-muted text-[0.9rem] my-[10px]">Building 45, Arya Samaj Rd,<br>New Delhi 110005</p>
+          <a href="#" class="text-gold hover:text-gold-light transition-colors">Get Directions</a>
+        </div>
+        <div class="bg-surface p-[15px] rounded-[6px] border border-border mt-[15px]">
+          <strong class="text-cream">Gurugram Branch</strong>
+          <p class="text-muted text-[0.9rem] my-[10px]">DLF Phase 4, Galleria Market,<br>Gurugram 122009</p>
+          <a href="#" class="text-gold hover:text-gold-light transition-colors">Get Directions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-border py-[20px] text-muted text-[0.9rem]">
+      <div
+        class="w-full max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-[15px] text-center">
+        <p>&copy; 2026 Aarti Gems Mine. All Rights Reserved.</p>
+        <div class="payments">
+          💳 Secure Payments: Visa | MasterCard | UPI | NetBanking
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="#"
+    class="fixed bottom-[30px] right-[30px] w-[60px] h-[60px] bg-[#25D366] text-white rounded-full flex items-center justify-center text-[2rem] shadow-[0_4px_20px_rgba(37,211,102,0.4)] z-[1000] hover:scale-110 transition-transform duration-300 animate-[bounce_2s_infinite]">
+    💬
+  </a>
+
+  <script src="universalJs/main.js"></script>
+</body>
+
+</html>
