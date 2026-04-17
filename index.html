@@ -120,40 +120,46 @@
       <div class="flex justify-between items-center">
 
         <div class="flex justify-center items-center gap-2">
-          <div class="h-14 flex justify-center items-center w-14 ">
-            <img src="./Images/logoandfavicon/favicon.png" class=" w-20 h-20 object-cover object-center rounded-full"
+          <div class="h-10 w-10 md:h-14 md:w-14 flex justify-center items-center shrink-0">
+            <img src="./Images/logoandfavicon/favicon.png" class="w-full h-full object-cover object-center rounded-full"
               alt="">
           </div>
           <a href="index.html" class="flex flex-col">
-            <h2 class="w-fit font-display font-semibold text-[2rem] tracking-[2px] text-cream m-0 leading-tight">
+            <h2
+              class="w-fit font-display font-semibold text-[1.5rem] md:text-[2rem] tracking-[1px] md:tracking-[2px] text-cream m-0 leading-tight">
               AARTI<span class="text-gold"> GEMS MINE</span></h2>
-            <div class="w-fit text-[0.75rem] text-muted tracking-[1px] uppercase text-center mt-[-2px]">Lab Certified •
+            <div
+              class="w-fit text-[0.6rem] md:text-[0.75rem] text-muted tracking-[1px] uppercase text-center mt-[-2px]">
+              Lab Certified •
               Since 2010</div>
           </a>
         </div>
         <div class="flex items-center gap-5">
-          <div class="flex items-center bg-surface border border-border rounded-[100px] px-[15px] py-[5px]">
-            <span>🔍</span>
-            <input type="text" placeholder="Search..."
-              class="bg-transparent border-none text-cream p-[5px] outline-none w-[150px]">
-          </div>
-          <a href="#" class="relative text-[1.2rem]">
+          <a href="#" class="relative text-[1.4rem]">
             <span><i class="ri-shopping-cart-2-line"></i></span>
             <span
-              class="absolute text-center -top-[4px] -right-[4px] bg-gold/70 text-white text-[0.7rem] font-bold h-4 w-4   rounded-full uppercase">2</span>
+              class="absolute flex items-center justify-center -top-[6px] -right-[6px] bg-gold/90 text-white text-[0.65rem] font-bold h-4 w-4 rounded-full uppercase">2</span>
           </a>
         </div>
       </div>
-      <div class="flex justify-between items-center w-full ">
+      <div class="flex items-center justify-between w-full gap-3 pt-2 lg:pt-2">
         <!-- Mobile Hamburger -->
-        <div class="hamburger flex flex-col gap-[5px] cursor-pointer lg:hidden">
-          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
-          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
-          <span class="w-[25px] h-[2px] bg-cream transition-all duration-300"></span>
+        <div class="hamburger flex flex-col gap-[5px] cursor-pointer lg:hidden shrink-0">
+          <span class="w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+          <span class="w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+          <span class="w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+        </div>
+
+        <!-- Search Bar -->
+        <div
+          class="flex flex-1 lg:max-w-[250px] items-center bg-surface border border-border rounded-[100px] px-[12px] py-[6px] transition-all focus-within:border-gold focus-within:shadow-[0_0_10px_rgba(201,168,76,0.1)]">
+          <span class="text-muted text-[1.1rem] flex items-center"><i class="ri-search-line"></i></span>
+          <input type="text" placeholder="Search gemstones..."
+            class="bg-transparent border-none text-cream px-[8px] py-[2px] outline-none w-full text-[0.9rem] placeholder:text-muted/70">
         </div>
 
         <!-- Nav Links Left -->
-        <nav class="hidden lg:flex w-full justify-between items-center">
+        <nav class="hidden lg:flex w-full justify-between items-center ml-[20px]">
           <div class="group static inline-block">
             <a href="#"
               class="text-[0.7rem] font-semibold uppercase tracking-[1.5px] hover:text-gold transition-colors py-[10px] block border-b-2 border-transparent group-hover:border-gold">Gemstones
@@ -872,7 +878,7 @@
           <div class="flex-1 flex flex-col gap-[10px]">
             <label class="text-gold text-[0.9rem] uppercase tracking-[1px] ">Select Gemstone</label>
             <select
-              class="w-full  py-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
+              class="w-full  p-[15px] bg-bg border border-border text-cream rounded-[6px] outline-none text-[1rem]">
               <option class="">Yellow Sapphire</option>
               <option class="">Blue Sapphire</option>
               <option class="">Emerald</option>
@@ -960,7 +966,7 @@
       <a href="#" class="text-gold hover:text-gold-light transition-colors">View All Collection →</a>
     </div>
 
-    <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px]">
+    <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[10px]">
       <!-- Product 1 -->
       <div
         class=" border border-border rounded-[12px]  transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] overflow-hidden group">
@@ -970,7 +976,7 @@
           <img src="Images/gemsCompressedImages/yellowsapphire2.07ct.webp" alt="Yellow Sapphire"
             class="object-cover w-full h-56 transition-transform duration-300 group-hover:scale-110">
         </div>
-        <div class="p-[20px]">
+        <div class="p-2 bg-surface">
           <h3 class="font-display font-semibold text-[1.2rem] text-nowrap mb-[5px]">Yellow Sapphire (Pukhraj)</h3>
           <p class="font-hindi text-muted mb-[15px]">पुखराज</p>
           <div class="flex flex-wrap gap-[10px] mb-[15px]">
@@ -988,13 +994,13 @@
       <!-- Product 2 -->
       <div
         class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
-        <div class="relative aspect-square bg-bg flex items-center justify-center">
+        <div class="relative bg-bg flex items-center justify-center">
           <span
-            class="absolute top-[15px] left-[15px] z-[2] bg-gold text-bg text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">BESTSELLER</span>
+            class="absolute top-[15px] left-[15px] overflow-hidden z-[2] bg-gold text-bg text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">BESTSELLER</span>
           <img src="Images/gemsCompressedImages/bluesapphire0.77ct.webp" alt="Blue Sapphire"
-            class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
+            class="object-cover w-full h-56 transition-transform duration-300 group-hover:scale-105">
         </div>
-        <div class="p-[20px]">
+        <div class="p-2">
           <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Blue Sapphire (Neelam)</h3>
           <p class="font-hindi text-muted mb-[15px]">नीलम</p>
           <div class="flex flex-wrap gap-[10px] mb-[15px]">
@@ -1011,13 +1017,13 @@
       <!-- Product 3 -->
       <div
         class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
-        <div class="relative aspect-square bg-bg flex items-center justify-center">
+        <div class="relative bg-bg flex items-center justify-center">
           <span
             class="absolute top-[15px] left-[15px] z-[2] bg-[#3b82f6] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">NEW</span>
           <img src="Images/gemsCompressedImages/emerald1.87ct.webp" alt="Emerald"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
         </div>
-        <div class="p-[20px]">
+        <div class="p-2">
           <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Emerald (Panna)</h3>
           <p class="font-hindi text-muted mb-[15px]">पन्ना</p>
           <div class="flex flex-wrap gap-[10px] mb-[15px]">
@@ -1040,7 +1046,7 @@
           <img src="Images/gemsCompressedImages/ruby2.39ct.webp" alt="Ruby"
             class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
         </div>
-        <div class="p-[20px]">
+        <div class="p-2">
           <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Ruby (Manik)</h3>
           <p class="font-hindi text-muted mb-[15px]">माणिक</p>
           <div class="flex flex-wrap gap-[10px] mb-[15px]">
@@ -1058,13 +1064,13 @@
       <!-- Product 5 -->
       <div
         class="bg-surface border border-border rounded-[12px] overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:border-gold hover:shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_0_1px_#c9a84c] group">
-        <div class="relative aspect-square bg-bg flex items-center justify-center">
+        <div class="relative bg-bg flex items-center justify-center">
           <span
             class="absolute top-[15px] left-[15px] z-[2] bg-[#10b981] text-white text-[0.75rem] font-bold px-[8px] py-[2px] rounded-full tracking-[0.05em] uppercase">CERTIFIED</span>
           <img src="Images/gemsCompressedImages/coral3.49ct.webp" alt="Red Coral"
             class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
         </div>
-        <div class="p-[20px]">
+        <div class="p-2">
           <h3 class="font-display font-semibold text-[1.2rem] mb-[5px]">Red Coral (Moonga)</h3>
           <p class="font-hindi text-muted mb-[15px]">मूंगा</p>
           <div class="flex flex-wrap gap-[10px] mb-[15px]">
